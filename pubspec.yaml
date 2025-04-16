@@ -1,5 +1,5 @@
 name: flutter_service_container
-description: "Useful widgets for service_container package."
+description: "Useful widgets for service_container package that support share service provider instances."
 version: 0.0.1
 repository: https://github.com/codelovercc/flutter_service_container
 homepage: https://github.com/codelovercc/flutter_service_container
