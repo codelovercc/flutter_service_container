@@ -11,9 +11,6 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
 # flutter_service_container
 
 [![pub package](https://img.shields.io/pub/v/flutter_service_container?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/flutter_service_container)
