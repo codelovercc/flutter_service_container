@@ -125,6 +125,7 @@ class ServicesScope extends StatefulWidget {
 
 class _ServicesScopeState extends State<ServicesScope> {
   late final IServiceScope scope;
+
   @override
   void initState() {
     scope = widget.factory.createScope();
@@ -165,6 +166,7 @@ final class ServiceConsumer extends StatefulWidget {
 
 class _ServiceConsumerState extends State<ServiceConsumer> {
   late final IServiceProvider provider;
+
   @override
   void initState() {
     provider = Services.of(context);
