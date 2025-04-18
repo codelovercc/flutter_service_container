@@ -76,7 +76,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.3"
+    version: "0.0.5"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -158,10 +158,10 @@ packages:
     dependency: "direct main"
     description:
       name: service_container
-      sha256: ab752fa7ce5bd945ab7437e6ffdf59f8b6be29febc366ec80a296dfcd535dbb7
+      sha256: f199d6d2d1bd4f19a98a10d6e4b8ee5c8baf1e860546911b71ad7166f359226a
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.4"
+    version: "1.0.6"
   sky_engine:
     dependency: transitive
     description: flutter
