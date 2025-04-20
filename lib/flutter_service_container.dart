@@ -3,3 +3,4 @@ library;
 
 export 'src/logging.dart';
 export 'src/service_widgets.dart';
+export 'src/services.dart';

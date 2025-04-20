@@ -4,17 +4,12 @@ import 'package:flutter/widgets.dart';
 import 'package:logging/logging.dart';
 import 'package:service_container/service_container.dart';
 
-/// use [DeveloperLogPrinter] for service container logging.
-///
-/// Notes that dart:developer is not available in tests, do not use this in tests.
-void useDeveloperLogPrinter() {
-  $logPrinter = ServiceDescriptor.singleton((p) => DeveloperLogPrinter());
-}
-
 /// Forwards logs to the dart:developer log() API.
 ///
 /// Notes that dart:developer is not available in tests, do not use this in tests.
 class DeveloperLogPrinter implements LogPrinter {
+  const DeveloperLogPrinter();
+
   @override
   void printLog(LogRecord record) {
     // use `dumpErrorToConsole` for severe messages to ensure that severe
