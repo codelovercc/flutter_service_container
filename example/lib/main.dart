@@ -71,7 +71,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => ServicesScope(
-                      factory: Services.of(context),
                       child: const ScopeFeatureWidget(),
                     ),
                   ),

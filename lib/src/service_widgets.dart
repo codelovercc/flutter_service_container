@@ -108,8 +108,8 @@ class _ServicesRootState extends State<ServicesRoot> {
 ///
 /// In the [child] widget, use [Services.of] to get the [IServiceProvider] for the corresponding scope.
 class ServicesScope extends StatefulWidget {
-  /// The factory to create a scope.
-  final IServiceScopeFactory factory;
+  /// The factory to create a scope. Optional, if `null` then use `Services.of` to get the [IServiceScopeFactory].
+  final IServiceScopeFactory? factory;
 
   /// Child widget
   final Widget child;
@@ -117,7 +117,7 @@ class ServicesScope extends StatefulWidget {
   /// Provide a scope for the [child] widgets.
   ///
   /// The [IServiceScope] created by this widget will dispose when this widget is disposed.
-  const ServicesScope({super.key, required this.factory, required this.child});
+  const ServicesScope({super.key, this.factory, required this.child});
 
   @override
   State<ServicesScope> createState() => _ServicesScopeState();
@@ -128,7 +128,7 @@ class _ServicesScopeState extends State<ServicesScope> {
 
   @override
   void initState() {
-    scope = widget.factory.createScope();
+    scope = widget.factory?.createScope() ?? Services.of(context).createScope();
     super.initState();
   }
 
