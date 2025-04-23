@@ -1,3 +1,7 @@
+## 0.0.9
+
+- Update ServicesScope widget
+
 ## 0.0.8
 
 - Bump service_container dependency to 1.0.10
