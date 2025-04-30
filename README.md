@@ -57,11 +57,12 @@ flutter pub add flutter_service_container
 Here's a short example. For a full example, check out [example](example).
 
 ```dart
-
-ServiceDescriptor<Logger> exampleLogger = ServiceDescriptor.singleton((p) => Logger("Example"));
+// define a logger service
+ServiceDescriptor<Logger> $exampleLogger = ServiceDescriptor.singleton((p) => Logger("Example"));
 
 void main() {
-  useDeveloperLogPrinter();
+  // configure the container, use developer log printer
+  containerConfigure.useDeveloperLogPrinter();
 
   /// Use ServicesRoot to provide a root service provider for the app.
   runApp(
@@ -77,7 +78,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final logger = Services.of(context).getService(exampleLogger);
+    final logger = Services.of(context).getService($exampleLogger);
     logger.info("$MyApp is building");
     return MaterialApp(
       title: 'Flutter service Demo',
