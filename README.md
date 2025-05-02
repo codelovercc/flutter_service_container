@@ -95,7 +95,7 @@ class MyApp extends StatelessWidget {
 ## Logging
 
 Use [logging](https://pub.dev/packages/logging) package to logging.  
-`FlutterContainerConfigure.useDeveloperLogPrinter()` extension method will override the default log
+`containerConfigure.useDeveloperLogPrinter()` extension method will override the default log
 printer that defined in [service_container](https://pub.dev/packages/service_container) package and
 use `DeveloperLogPrinter`.   
 `DeveloperLogPrinter` forwards logs to the dart:developer log() API.
