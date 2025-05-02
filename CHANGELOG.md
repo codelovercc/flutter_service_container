@@ -1,3 +1,7 @@
+## 0.0.10
+
+- Update READE.md
+
 ## 0.0.9
 
 - Update ServicesScope widget
