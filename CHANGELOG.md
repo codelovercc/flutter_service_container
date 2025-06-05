@@ -1,3 +1,8 @@
+## 0.0.11
+
+- Bump service_container dependency to 1.0.12
+- Update flutter_lints to 6.0.0
+
 ## 0.0.10
 
 - Update READE.md
