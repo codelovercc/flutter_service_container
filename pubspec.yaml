@@ -1,6 +1,6 @@
 name: flutter_service_container
 description: "Useful widgets for service_container package that support share service provider instances."
-version: 0.0.11
+version: 0.0.12
 repository: https://github.com/codelovercc/flutter_service_container
 homepage: https://github.com/codelovercc/flutter_service_container
 
@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   logging: ^1.3.0
-  service_container: ^1.0.12
+  service_container: ^1.1.0
 
 dev_dependencies:
   flutter_test:

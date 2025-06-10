@@ -1,3 +1,7 @@
+## 0.0.12
+
+- Bump service_container dependency to 1.1.0
+
 ## 0.0.11
 
 - Bump service_container dependency to 1.0.12
