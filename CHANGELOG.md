@@ -1,3 +1,7 @@
+## 0.0.13
+
+- Export service_container library so that consumers is not required to install service_container package.
+
 ## 0.0.12
 
 - Bump service_container dependency to 1.1.0
